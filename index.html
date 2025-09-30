@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueFox Email Sandbox</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: #333;
+      background: #f9fbfd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      color: #13B0EE;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      max-width: 650px;
+      margin: 0.5rem auto 1.5rem;
+      line-height: 1.5;
+    }
+    ol {
+      text-align: left;
+      max-width: 600px;
+      margin: 1.5rem auto;
+      padding-left: 1.2rem;
+    }
+    ol li {
+      margin: 0.8rem 0;
+    }
+    strong {
+      color: #392C91;
+    }
+    .illustration {
+      margin: 2rem 0;
+    }
+    .illustration img {
+      max-width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      color: white;
+      background: #392C91;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #2c2070;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Placeholder logo -->
+    <img src="/bluefoxemail-logo-200x200.webp" alt="BlueFox Logo">
+  </header>
+
+  <main>
+    <h1>Welcome to the Sandbox</h1>
+    <p>
+      Sandbox projects let you safely explore BlueFox Email before full production access.  
+      Here’s how it works:
+    </p>
+
+    <ol>
+      <li>
+        <strong>Sandbox (no verified domain)</strong>:  
+        You can only send <strong>from bluefoxemailsandbox.com</strong> and <strong>to your verified email addresses</strong>.
+      </li>
+      <li>
+        <strong>Sandbox (with verified domain)</strong>:  
+        Once you verify your domain, you can send <strong>from that domain</strong>, but only <strong>to addresses inside your domain</strong> and your verified email addresses.
+      </li>
+      <li>
+        <strong>Production access</strong>:  
+        After applying and being approved, you can send <strong>from verified domains to any email address</strong>.
+      </li>
+    </ol>
+
+    <p>
+      Alternatively, you can <strong>bring your own Amazon SES</strong> and use it directly with BlueFox Email.
+    </p>
+
+    <div class="illustration">
+      <!-- Placeholder illustration -->
+      <img src="/sandbox.webp" alt="Sandbox illustration placeholder">
+    </div>
+
+    <a href="https://bluefox.email" class="btn">Go to BlueFox Email</a>
+  </main>
+
+  <footer>
+    © <span id="year"></span> BlueFox Email Sandbox
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
