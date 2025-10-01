@@ -21,7 +21,7 @@
       margin-bottom: 1rem;
     }
     h1 {
-      color: #13B0EE;
+      color: #0D7AB8; /* Fixed: sufficient contrast on #f9fbfd */
       margin-bottom: 0.5rem;
     }
     p {
@@ -65,14 +65,22 @@
     footer {
       margin-top: 3rem;
       font-size: 0.85rem;
-      color: #777;
+      color: #666; /* Improved contrast for accessibility */
     }
   </style>
 </head>
 <body>
   <header>
-    <!-- Placeholder logo -->
-    <img src="/bluefoxemail-logo-200x200.webp" alt="BlueFox Logo">
+    <img
+      src="/bluefoxemail-logo-200x.webp"
+      srcset="/bluefoxemail-logo-200x.webp 1x,
+              /bluefoxemail-logo-400x.webp 2x,
+              /bluefoxemail-logo-600x.webp 3x"
+      alt="BlueFox Logo"
+      width="200"
+      height="200"
+      fetchpriority="high"
+    >
   </header>
 
   <main>
